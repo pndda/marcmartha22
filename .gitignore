@@ -7,18 +7,18 @@ atlassian-ide-plugin.xml
 replace
 design
 
-htdocs/wp/
-htdocs/vendor/
-htdocs/content/plugins/
-htdocs/content/uploads/
-htdocs/content/wflogs/
-htdocs/content/cache/
-htdocs/content/upgrade/
-htdocs/content/wp-rocket-config/
-htdocs/content/advanced-cache.php
+wp/
+vendor/
+wp-content/plugins/
+wp-content/uploads/
+wp-content/wflogs/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/wp-rocket-config/
+wp-content/advanced-cache.php
 
-htdocs/content/themes/studiopanadda/build
-htdocs/content/themes/studiopanadda/node_modules
+wp-content/themes/studiopanadda/build
+wp-content/themes/studiopanadda/node_modules
 
 # Ignore htaccess file so this can be different per environment
 /htdocs/.htaccess
