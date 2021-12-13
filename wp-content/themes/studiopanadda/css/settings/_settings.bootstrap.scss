@@ -1,0 +1,38 @@
+/**
+  Colors
+ */
+
+$primary: #009ee3;
+$secondary: #53cdb2;
+$dark: #071217;
+$body-color: #ffffff;
+$success: #80b424;
+
+/**
+  Fonts
+ */
+$font-family-base: 'Roboto', sans-serif;
+$headings-font-family: 'Oswald', sans-serif;
+$headings-font-weight: 400;
+$enable-responsive-font-sizes: true;
+
+$font-serif: 'Playfair Display', serif;
+$font-body: 'Roboto', sans-serif;
+
+
+
+$h1-font-size: 70px;
+$h2-font-size: 44px;
+$h3-font-size: 34px;
+$h4-font-size: 24px;
+$h5-font-size: 20px;
+$h6-font-size: 16px;
+
+/**
+  Spacing
+ */
+
+$container-max-widths: (
+  lg: 960px,
+  xl: 1300px
+);

@@ -1,0 +1,36 @@
+.c-header {
+  position: absolute;
+  width: 100%;
+  background-color: $white;
+  font-weight: $font-weight-bold;
+  transition: all .3s ease-in-out;
+
+  &.is-fixed {
+    position: fixed;
+    z-index: 900;
+    box-shadow: 0 0 5px rgba($black, .1);
+    transform: translateX(0) !important;
+    animation: 1s headerDown;
+
+    @include media-breakpoint-down(md) {
+      .is-open-sidebar & {
+        transform: translateY(-100%) !important;
+      }
+    }
+  }
+
+  .is-open-sidebar & {
+    transform: translateX(-100%);
+  }
+}
+
+
+@keyframes headerDown {
+  from {
+    transform: translateX(0) translateY(-100%);
+  }
+
+  to {
+    transform: translateX(0) translateY(0);
+  }
+}

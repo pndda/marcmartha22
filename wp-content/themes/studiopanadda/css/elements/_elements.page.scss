@@ -1,0 +1,32 @@
+/*
+ * Page Settings
+ * Global page settings
+ */
+
+ html {
+    min-height: 100%; /* [1] */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    color: $dark;
+  }
+  
+  main {
+    position: relative;
+    z-index: 10;
+    flex-grow: 1;
+    transition: all .3s ease-in-out;
+  
+    .is-open-sidebar & {
+      transform: translateY(100%);
+    }
+    .is-open-menu & {
+      transform: translateY(100%);
+    }
+  }
+  

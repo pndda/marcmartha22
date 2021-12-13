@@ -1,0 +1,24 @@
+.project
+.settings
+nbproject
+.idea
+atlassian-ide-plugin.xml
+.vagrant
+replace
+design
+
+htdocs/wp/
+htdocs/vendor/
+htdocs/content/plugins/
+htdocs/content/uploads/
+htdocs/content/wflogs/
+htdocs/content/cache/
+htdocs/content/upgrade/
+htdocs/content/wp-rocket-config/
+htdocs/content/advanced-cache.php
+
+htdocs/content/themes/studiopanadda/build
+htdocs/content/themes/studiopanadda/node_modules
+
+# Ignore htaccess file so this can be different per environment
+/htdocs/.htaccess

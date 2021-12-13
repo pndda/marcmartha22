@@ -1,0 +1,36 @@
+.b-quote {
+  p {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 0;
+    font-style: italic;
+    font-size: 20px;
+
+    &::before,
+    &::after {
+      content: '';
+      background: url('../img/default/icon-quote.svg') no-repeat;
+      background-size: 15px;
+      width: 15px;
+      height: 15px;
+      position: absolute;
+
+      @include media-breakpoint-down(sm) {
+        background-size: 10px;
+        width: 10px;
+        height: 10px;
+      }
+    }
+
+    &::before {
+      transform: scale(-1, 1);
+      left: -25px;
+      top: 0;
+    }
+
+    &::after {
+      right: -25px;
+      bottom: -5px;
+    }
+  }
+}

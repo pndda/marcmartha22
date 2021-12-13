@@ -1,0 +1,110 @@
+.studiopanadda-theme {
+  label,
+  legend,
+  label .gfield_required {
+    @include rfs(12);
+    color: $black !important;
+
+    .optional {
+      font-size: inherit;
+      font-style: italic;
+    }
+  }
+
+  // Inputs
+  input[type='text'],
+  input[type='email'],
+  input[type='number'],
+  input[type='search'],
+  input[type='tel'],
+  input[type='url'],
+  input[type='password'],
+  textarea {
+    width: 100%;
+    border: 1px solid $dark;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  // Select
+  select {
+    @extend .form-control;
+    background: url('../img/default/icon-dropdown.svg') no-repeat 98% center;
+    background-size: 10px;
+    appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    border: 1px solid $dark;
+    border-radius: 5px;
+    line-height: 1;
+
+    &::-ms-expand {
+      display: none;
+    }
+  }
+
+  .select2-selection__rendered {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  // Checkbox
+  .checkbox {
+    display: flex;
+    align-items: center;
+  }
+
+  input[type='checkbox'] {
+    display: flex;
+    color: $dark;
+    margin-right: 10px;
+    appearance: none;
+
+    &::before {
+      content: '';
+      flex: 0 0 auto;
+      width: 18px;
+      height: 18px;
+      border-radius: 2px;
+      border: 1px solid $dark;
+    }
+  }
+
+  input[type='checkbox']:checked {
+    color: $secondary;
+
+    &::before {
+      background: $secondary;
+    }
+  }
+
+  // Radio Button
+  input[type='radio'] {
+    display: none;
+  }
+
+  input[type='radio'] + label {
+    display: flex;
+    align-items: center;
+    color: $dark;
+    width: 100%;
+
+    &::before {
+      content: '';
+      flex: 0 0 auto;
+      width: 18px;
+      height: 18px;
+      margin-right: 1rem;
+      border-radius: 2px;
+      border: 1px solid $dark;
+    }
+  }
+
+  input[type='radio']:checked + label {
+    color: $secondary;
+
+    &::before {
+      background: $secondary;
+    }
+  }
+}

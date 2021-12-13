@@ -1,0 +1,36 @@
+.b-video__play {
+  display: block;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    margin: 0 auto;
+    background: url('../img/default/icon-play.svg') no-repeat;
+    background-size: 100%;
+    width: 100px;
+    height: 100px;
+    content: '';
+    position: absolute;
+    top: calc(50% - 25px);
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    opacity: .8;
+    transition: .3s all ease-in;
+
+    @include media-breakpoint-down(md) {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
