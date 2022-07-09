@@ -15,7 +15,7 @@ add_theme_support( 'starter-content');
 
 
 function remove_footer_admin () {
-    echo "Website name - designed by <a href='https://www.linkedin.com/in/panadda-manarata/' target='blank_'>Studio Panadda</a>";
+    echo "Martha - made by <a href='https://www.linkedin.com/in/panadda-manarata/' target='blank_'>Studio Panadda</a>";
 } 
 
 add_filter('admin_footer_text', 'remove_footer_admin');

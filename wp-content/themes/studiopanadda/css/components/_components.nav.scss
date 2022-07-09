@@ -11,10 +11,87 @@
     padding: 0;
 
     a {
-      padding: 10px;
+      font-family: 'Haas Display';
+      font-weight: 300;
     }
   }
 }
+
+.c-header {
+
+  span,
+  a,
+  .closebtn {
+    font-family: 'Haas Display';
+    font-weight: 300;
+    @include rfs(26px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+  }
+
+  .closebtn {
+    justify-content: flex-start;
+    color: #fff;
+    line-height: 2.1;
+  }
+
+  .c-home__logo {
+    font-family: 'Skanaus';
+    text-decoration: none;
+    color: inherit;
+    @include rfs(50px);
+    text-transform: none;
+  }
+
+  .overlay {
+    .c-home__logo,
+    a,
+    span {
+      color: #fff;
+    }
+
+    ul {
+      li {
+        list-style: none;
+      }
+    }
+
+    .c-overlay__menu {
+      ul {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      a {
+        text-decoration: none;
+        @include rfs(220px);
+        display: block;
+        transition: 0.3s;
+        color: #fff;
+        line-height: 1;
+        font-weight: 300;
+        transition: .2s all;
+
+        &:hover {
+          font-weight: 400;
+          transition: .2s all;
+        }
+      }
+    }
+  }
+}
+
 
 .c-nav-legal {
   ul {
@@ -31,11 +108,13 @@
     padding: 10px;
   }
 }
-.c-sidebar{
+
+.c-sidebar {
   ul {
     display: flex;
     flex-direction: column;
-    li{
+
+    li {
       display: inline-block;
       // ::marker{
       //  display: none;
@@ -49,15 +128,15 @@
   ul {
     display: flex;
     flex-direction: column;
-    li{
+
+    li {
       display: inline-block;
       list-style: none;
-      ::marker{
-       display: none;
+
+      ::marker {
+        display: none;
       }
 
     }
   }
 }
-
-

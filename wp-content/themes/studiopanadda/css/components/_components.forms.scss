@@ -27,26 +27,26 @@
   }
 
   // Select
-  select {
-    @extend .form-control;
-    background: url('../img/default/icon-dropdown.svg') no-repeat 98% center;
-    background-size: 10px;
-    appearance: none;
-    text-indent: 1px;
-    text-overflow: '';
-    border: 1px solid $dark;
-    border-radius: 5px;
-    line-height: 1;
+  // select {
+  //   @extend .form-control;
+  //   background: url('../img/default/icon-dropdown.svg') no-repeat 98% center;
+  //   background-size: 10px;
+  //   appearance: none;
+  //   text-indent: 1px;
+  //   text-overflow: '';
+  //   border: 1px solid $dark;
+  //   border-radius: 5px;
+  //   line-height: 1;
 
-    &::-ms-expand {
-      display: none;
-    }
-  }
+  //   &::-ms-expand {
+  //     display: none;
+  //   }
+  // }
 
-  .select2-selection__rendered {
-    font-size: 12px;
-    font-weight: 400;
-  }
+  // .select2-selection__rendered {
+  //   font-size: 12px;
+  //   font-weight: 400;
+  // }
 
   // Checkbox
   .checkbox {

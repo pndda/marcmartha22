@@ -4,6 +4,8 @@
  */
 
  @import 'settings/settings.bootstrap';
+ @import 'settings/settings.woocommerce'; 
+ @import 'settings/settings.fonts';
 
  // Bootstrap (default)
  @import '../node_modules/bootstrap/scss/bootstrap';
@@ -21,4 +23,7 @@
  
  // Blocks
  @import 'blocks';
+
+
+ @import '../node_modules/locomotive-scroll/dist/locomotive-scroll.css';
  

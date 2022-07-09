@@ -13,7 +13,7 @@
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    color: $dark;
+    color: $dark !important;
   }
   
   main {
@@ -21,12 +21,13 @@
     z-index: 10;
     flex-grow: 1;
     transition: all .3s ease-in-out;
+    color: $dark;
   
     .is-open-sidebar & {
-      transform: translateY(100%);
+      transform: translateY(100vh);
     }
     .is-open-menu & {
-      transform: translateY(100%);
+      transform: translateY(100vh);
     }
   }
   

@@ -60,7 +60,15 @@ jQuery(document).ready(function ($) {
     if (buttonElement) {
       buttonElement.addEventListener('click', dismiss);
     }
+
+    const scroll = new LocomotiveScroll({
+      el: document.querySelector('[data-scroll-container]'),
+      smooth: true
+  });
+
   });
   
+
+
   
   

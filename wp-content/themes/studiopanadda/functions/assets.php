@@ -30,6 +30,8 @@ function studiopanadda_scripts() {
     $cacheBuster = filemtime(get_template_directory() . '/dist/js/main.js');
     wp_enqueue_script('scripts.js', get_template_directory_uri() . '/dist/js/main.js', array(), $cacheBuster, true);
 
+    wp_enqueue_script( 'c-loco', '//cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.min.js');
+
     // Add php vars to scripts.js => vars['ajaxurl']
     $vars = array(
         'ajaxurl' => admin_url('admin-ajax.php'),
@@ -41,6 +43,14 @@ function studiopanadda_scripts() {
    }
    add_action( 'wp_enqueue_scripts', 'studiopanadda_scripts' );
    
+   function add_gutenberg_to_admin()
+{
+    wp_register_style('intracto_gutenberg_css', get_stylesheet_directory_uri() . '/build/css/gutenberg.css', false, '1.0.0');
+    wp_enqueue_style('intracto_gutenberg_css');
+}
+
+add_action('enqueue_block_editor_assets', 'add_gutenberg_to_admin');
+
 
 // add favicon
 function my_favicon() { ?>
